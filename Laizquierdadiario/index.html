@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Izquierda Diario</title>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-main">
+      <div class="header-left">
+        <button class="menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+        <img src="img/laizquierdalogo.png" alt="La Izquierda Diario" class="logo-img"/>
+      </div>
+      <div class="header-right">
+        <button class="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16.5" y1="16.5" x2="22" y2="22"/>
+          </svg>
+        </button>
+        <button class="user-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav class="countries-nav">
+      <a href="#">Argentina</a>
+      <a href="#">Brasil</a>
+      <a href="#">México</a>
+      <a href="#">Chile</a>
+      <a href="#">Uruguay</a>
+      <a href="#">Venezuela</a>
+      <a href="#">Bolivia</a>
+      <a href="#">Perú</a>
+      <a href="#">Costa Rica</a>
+      <a href="#">España</a>
+      <a href="#">Estados Unidos</a>
+      <a href="#">Francia</a>
+      <a href="#">Alemania</a>
+      <a href="#">Italia</a>
+    </nav>
+  </header>
+
+  <!-- MENU LATERAL -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <nav class="menu-lateral" id="menuLateral">
+    <div class="menu-header">
+      <span class="menu-titulo">SECCIONES</span>
+      <button class="menu-lateral-cerrar" id="menuCerrar"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="menu-lista">
+      <li><a href="#"><i class="fas fa-chevron-right"></i> Últimas noticias</a></li>
+      <li><a href="#"><i class="fas fa-chevron-right"></i> Red de corresponsales</a></li>
+      <li><a href="#"><i class="fas fa-chevron-right"></i> Política</a></li>
+      <li><a href="#"><i class="fas fa-chevron-right"></i> Economía</a></li>
+      <li><a href="#"><i class="fas fa-chevron-right"></i> Géneros y sexualidades</a></li>
+      <li><a href="#"><i class="fas fa-chevron-right"></i> Juventud trabajadora</a></li>
+      <li><a href="#"><i class="fas fa-chevron-right"></i> Cultura</a></li>
+      <li><a href="#"><i class="fas fa-chevron-right"></i> Especiales</a></li>
+    </ul>
+  </nav>
+
+  <!-- ULTIMAS NOTICIAS -->
+ <section class="seccion-noticias">
+  <div class="seccion-header">
+  </div>
+  <div class="noticia-destacada">
+    <div class="noticia-destacada-texto">
+      <h3>Santa Fé: Ante el cierre de la fábrica Verónica los trabajadores realizan una importante concentración</h3>
+      <p>La empresa lechera Verónica adeuda salarios, afectando a 700 trabajadores de Rafaela y la región. Los trabajadores continúan organizados y con medidas de lucha. Esta vez frente a la Secretaría de Trabajo.</p>
+      <div class="corresponsal-card-badge cp-clickeable" data-id="JP">
+  <div class="badge-avatar">JP</div>
+  <span>Corresponsal Juan Pérez</span>
+</div>
+      <a href="#" class="leer-mas">Leer más</a>
+    </div>
+    <div class="noticia-destacada-img">
+      <img src="img/noticiaprincipal.png" alt="Noticia principal"/>
+    </div>
+  </div>
+
+
+  <!-- BANNER TU PALABRA IMPORTA -->
+  <section class="banner-palabra">
+    <div class="banner-contenido">
+      <div class="banner-texto">
+        <h2 class="banner-titulo">
+          <span class="titulo-blanco">TU PALABRA</span>
+          <span class="titulo-rojo">IMPORTA</span>
+        </h2>
+        <p>En La Izquierda Diario creemos en las voces que viven, trabajan y participan de la realidad todos los días. Sumá tu voz a la cobertura colectiva. Enviá tu testimonio, tu cobertura o tu experiencia y sumate a una red de voces colectivas.</p>
+        <a href="#" class="banner-link">Enviá tu noticia ›</a>
+      </div>
+      <div class="banner-imagen">
+        <img src="img/megafono.png" alt="Megáfono"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion-noticias">
+  <div class="seccion-header">
+    <h2 class="seccion-titulo">RED DE CORRESPONSALES</h2>
+    <a href="#" class="ver-mas">Ver más +</a>
+  </div>
+  <div class="corresponsales-grid">
+
+    <div class="corresponsal-card">
+      <img src="img/noticia1cor.png" alt="Noticia"/>
+      <div class="corresponsal-card-texto">
+        <h4>Junto a José Montes se presentó el libro "El pibe de los Astilleros" en Berisso</h4>
+        <div class="corresponsal-card-badge cp-clickeable" data-id="PL">
+          <div class="badge-avatar">PL</div>
+          <span>Corresponsal Pepe Lopez</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="corresponsal-card">
+      <img src="img/noticia2cor.png" alt="Noticia"/>
+      <div class="corresponsal-card-texto">
+        <h4>Alumnos pararon: Trabajadores de Bebas Músicas denuncian despidos en Coca Cola Andina</h4>
+        <div class="corresponsal-card-badge cp-clickeable" data-id="LG">
+          <div class="badge-avatar">LG</div>
+          <span>Corresponsal Lorena González</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="corresponsal-card">
+      <img src="img/noticia3cor.png" alt="Noticia"/>
+      <div class="corresponsal-card-texto">
+        <h4>Cierre de los trabajadores del hospital Bordó: denuncian irregularidades y vaciamiento</h4>
+        <div class="corresponsal-card-badge cp-clickeable" data-id="LF">
+          <div class="badge-avatar">LF</div>
+          <span>Corresponsal Luz Fernandez</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- POLÍTICA -->
+<section class="seccion-noticias">
+  <div class="seccion-header">
+    <h2 class="seccion-titulo">POLÍTICA</h2>
+    <a href="#" class="ver-mas">Ver más +</a>
+  </div>
+  <div class="noticias-grid">
+    <div class="noticia-principal">
+      <img src="img/miriam.png" alt="Noticia principal"/>
+      <h3>Diputados nacionales repudian la campaña de hostigamiento contra Myriam Bregman</h3>
+      <p>Diputados y diputadas de distintos bloques repudiaron la campaña de difamación, hostigamiento y violencia política y simbólica impulsada desde La Derecha Diario contra la diputada nacional Myriam Bregman.</p>
+      <a href="#" class="leer-mas">Leer más</a>
+    </div>
+    <div class="noticias-secundarias">
+      <div class="noticia-secundaria">
+        <img src="img/digi.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>Tienen RIGI y quieren más: empresarios de minería y petróleo pidieron más beneficios</h4>
+          <span class="noticia-meta">CABA</span>
+        </div>
+      </div>
+      <div class="noticia-secundaria">
+        <img src="img/19j.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>Viernes 19J: movilización contra los desalojos y por el derecho a la vivienda</h4>
+          <span class="noticia-meta">CABA</span>
+        </div>
+      </div>
+      <div class="noticia-secundaria">
+        <img src="img/bullrich.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>Bullrich publicó un video y volvió a agitar la interna libertaria</h4>
+          <span class="noticia-meta">CABA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- ECONOMÍA -->
+<section class="seccion-noticias">
+  <div class="seccion-header">
+    <h2 class="seccion-titulo">ECONOMÍA</h2>
+    <a href="#" class="ver-mas">Ver más +</a>
+  </div>
+  <div class="noticias-grid">
+    <div class="noticia-principal">
+      <img src="img/trabajadores.png" alt="Noticia principal"/>
+      <h3>Milei cumple: récord histórico de trabajadores sin derechos</h3>
+      <p>Las cifras oficiales del Indec sobre el mercado laboral del primer trimestre de 2026 son elocuentes y demoledoras: la precarización laboral volvió.</p>
+      <a href="#" class="leer-mas">Leer más</a>
+    </div>
+    <div class="noticias-secundarias">
+      <div class="noticia-secundaria">
+        <img src="img/mundial.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>Dólar Mundial 2026. A la suba récord de la divisa se sumó una mala noticia de Morgan Stanley que hundió acciones</h4>
+          <span class="noticia-meta">CABA · Julio Perez</span>
+        </div>
+      </div>
+      <div class="noticia-secundaria noticia-clickeable" id="noticiaDeudaMilei">
+        <img src="img/deuda.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>Milei autorizó a endeudarse por U$S 5.000 millones con jurisdicción extranjera antes del partido de Argentina</h4>
+          <span class="noticia-meta">CABA</span>
+        </div>
+      </div>
+      <div class="noticia-secundaria">
+        <img src="img/familia.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>En Provincia de Buenos Aires, 4 de cada 10 familias deben comer menos para pagar sus deudas</h4>
+          <span class="noticia-meta">GBA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- GÉNEROS Y SEXUALIDADES -->
+<section class="seccion-noticias">
+  <div class="seccion-header">
+    <h2 class="seccion-titulo">GÉNEROS Y SEXUALIDADES</h2>
+    <a href="#" class="ver-mas">Ver más +</a>
+  </div>
+  <div class="noticias-grid">
+    <div class="noticia-principal">
+      <img src="img/genero1.png" alt="Noticia principal"/>
+      <h3>Andrea D'Atri cruzó a Claudia Muzzio ante su defensa de la natalidad y el ataque al feminismo</h3>
+      <p>La polémica se inició tras una crítica del periodista Luis Novaresio a una charla brindada por la vicejefa de Gobierno porteño sobre la caída de la natalidad.</p>
+      <a href="#" class="leer-mas">Leer más</a>
+    </div>
+    <div class="noticias-secundarias">
+      <div class="noticia-secundaria">
+        <img src="img/genero 2.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>¿Por qué atacan a Myriam Bregman?</h4>
+          <span class="noticia-meta">CABA · Sol Bajar</span>
+        </div>
+      </div>
+      <div class="noticia-secundaria">
+        <img src="img/genero3.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>Se lanzó en La Plata el primer comité de mujeres y disidencias junto a Myriam Bregman</h4>
+          <span class="noticia-meta">PBA</span>
+        </div>
+      </div>
+      <div class="noticia-secundaria">
+        <img src="img/genero 4.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>Vivas nos queremos. Miles salimos en Jujuy por Ni una Menos</h4>
+          <span class="noticia-meta">Jujuy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- JUVENTUD TRABAJADORA -->
+<section class="seccion-noticias">
+  <div class="seccion-header">
+    <h2 class="seccion-titulo">JUVENTUD TRABAJADORA</h2>
+    <a href="#" class="ver-mas">Ver más +</a>
+  </div>
+  <div class="noticias-grid">
+    <div class="noticia-principal">
+      <img src="img/juventud1.png" alt="Noticia principal"/>
+      <h3>Cínico y mentiroso: el secretario de Trabajo dijo que "los jóvenes" no quieren tantas vacaciones</h3>
+      <p>En plena avanzada esclavista, Julio Cordero justificó el recorte de derechos con un discurso "generacional" que nada tiene que ver con la realidad.</p>
+      <a href="#" class="leer-mas">Leer más</a>
+    </div>
+    <div class="noticias-secundarias">
+      <div class="noticia-secundaria">
+        <img src="img/juventud 2.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>Realizaron un "Trenazo" en el Ferrocarril Sarmiento contra la reforma laboral</h4>
+          <span class="noticia-meta">CABA</span>
+        </div>
+      </div>
+      <div class="noticia-secundaria noticia-clickeable" id="noticiaFilaTrabajo">
+        <img src="img/juventud3.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>Larga fila por un trabajo de temporada ¿Quiénes dicen que los jóvenes no quieren trabajar?</h4>
+          <span class="noticia-meta">Jujuy</span>
+        </div>
+      </div>
+      <div class="noticia-secundaria">
+        <img src="img/juventud4.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>"Mi mamá es jubilada, yo también lo voy a ser, mira sino me voy a solidarizar"</h4>
+          <span class="noticia-meta">CABA · Owen Luna</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CULTURA -->
+<section class="seccion-noticias">
+  <div class="seccion-header">
+    <h2 class="seccion-titulo">CULTURA</h2>
+    <a href="#" class="ver-mas">Ver más +</a>
+  </div>
+  <div class="noticias-grid">
+    <div class="noticia-principal">
+      <img src="img/cultura1.png" alt="Noticia principal"/>
+      <h3>La argentina Cecilia Rodríguez gana el III Premio de Novela Corta Francisco Ayala</h3>
+      <p>La autora y editora de este medio se quedó con el III Premio Internacional Francisco Ayala por "No debería excitarme que hables así"</p>
+      <a href="#" class="leer-mas">Leer más</a>
+    </div>
+    <div class="noticias-secundarias">
+      <div class="noticia-secundaria">
+        <img src="img/cultura2.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>El día de la revelación: lo comunitario como inteligencia superior</h4>
+          <span class="noticia-meta">Carla Leonardi</span>
+        </div>
+      </div>
+      <div class="noticia-secundaria">
+        <img src="img/cultura3.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>La Legislatura porteña declaró de interés el documental sobre Norita Cortiñas: "Un símbolo de rebeldía"</h4>
+          <span class="noticia-meta">CABA</span>
+        </div>
+      </div>
+      <div class="noticia-secundaria">
+        <img src="img/cultura4.png" alt="Noticia"/>
+        <div class="noticia-secundaria-texto">
+          <h4>El Indio Solari, su conexión con Epecuén y el perfume de la tempestad</h4>
+          <span class="noticia-meta">Juan Ignacio Provéndola</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-redes">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Ayuda y soporte</a>
+        <a href="#">Opciones de cookies</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 La Izquierda Diario. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- MODAL NOTICIA -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-cerrar" id="modalCerrar"><i class="fas fa-times"></i></button>
+      <p class="modal-subtitulo">TU PALABRA IMPORTA</p>
+      <h2 class="modal-titulo">Compartí tu noticia</h2>
+      <p class="modal-descripcion">Contanos qué está pasando en tu comunidad, trabajo, escuela o barrio.<br/>Tu mirada también es parte de la cobertura colectiva, sumate a nuestra red de corresponsales</p>
+      <div class="modal-form-card">
+      <div class="form-fila">
+        <div class="form-grupo">
+          <label>Nombre completo</label>
+          <input type="text" placeholder="Escribí tu nombre"/>
+        </div>
+        <div class="form-grupo">
+          <label>Correo electrónico</label>
+          <input type="email" placeholder="Ej. nombre@gmail.com"/>
+        </div>
+      </div>
+      <div class="form-grupo">
+        <label>¿Desde dónde nos escribís?</label>
+        <input type="text" placeholder="Ciudad, provincia o barrio"/>
+      </div>
+      <div class="form-grupo">
+        <label>Categoría</label>
+        <input type="text" placeholder="Escribí una categoría"/>
+      </div>
+      <div class="form-grupo">
+        <label>Contanos qué está pasando</label>
+        <textarea placeholder="Escribí tu experiencia, cobertura o situación que te gustaría visibilizar. Cuantos más detalles puedas compartir, mejor."></textarea>
+      </div>
+      <div class="form-adjuntar">
+        <div class="adjuntar-icono">
+          <i class="fas fa-upload"></i>
+          <div>
+            <p>Adjuntá imágenes o videos</p>
+            <span>Podés subir hasta 5 archivos. Máximo 20MB por archivo.</span>
+          </div>
+        </div>
+        <button class="btn-adjuntar">Seleccionar archivos</button>
+      </div>
+      <button class="btn-enviar">Enviar noticia</button>
+      </div>
+      <p class="modal-privacidad"><i class="fas fa-lock"></i> Tu información será utilizada únicamente para contactarnos con vos.<br/>Nos pondremos en contacto con vos por correo electrónico.</p>
+    </div>
+  </div>
+
+  <!-- LOGIN -->
+  <!-- BIENVENIDA (pantalla inicial, solo mobile) -->
+  <div class="auth-overlay bienvenida-overlay" id="bienvenidaOverlay">
+    <button class="auth-cerrar bienvenida-cerrar" id="bienvenidaCerrar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="bienvenida-contenido">
+      <h2 class="bienvenida-titulo">Te damos la bienvenida a La Izquierda Diario</h2>
+      <button class="btn-bienvenida" id="bienvenidaIniciarSesion">INICIAR SESIÓN</button>
+      <span class="bienvenida-o">o</span>
+      <button class="btn-bienvenida" id="bienvenidaRegistrarme">REGISTRARME</button>
+    </div>
+  </div>
+
+  <div class="auth-overlay" id="authOverlay">
+    <button class="auth-cerrar" id="authCerrar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="auth-grid">
+      <div class="auth-izquierda" id="panelLogin">
+        <h2 class="auth-titulo">Iniciar sesión</h2>
+        <div class="auth-redes">
+          <button class="btn-red"><i class="fab fa-google"></i></button>
+          <button class="btn-red"><i class="fab fa-facebook-f"></i></button>
+          <button class="btn-red"><i class="fab fa-instagram"></i></button>
+          <button class="btn-red"><i class="fab fa-twitter"></i></button>
+        </div>
+        <p class="auth-o">Ingresa con tu E-mail</p>
+        <div class="form-grupo">
+          <input type="email" id="loginEmail" placeholder="Ingresa tu E-mail"/>
+        </div>
+        <div class="form-grupo">
+          <input type="password" id="loginPassword" placeholder="Ingresa tu contraseña"/>
+        </div>
+        <p class="auth-error" id="loginError"></p>
+        <button class="btn-auth" id="btnLogin">INICIAR SESIÓN</button>
+      </div>
+      <div class="auth-derecha">
+        <h2 class="auth-titulo-derecha">Te damos la bienvenida a La Izquierda Diario</h2>
+        <p class="auth-desc-derecha">Registráte ahora y seguí las coberturas que más te interesan</p>
+        <button class="btn-auth-derecha" id="irARegistro">REGISTRARME</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- REGISTRO -->
+  <div class="auth-overlay" id="registroOverlay">
+    <button class="auth-cerrar" id="registroCerrar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="auth-grid">
+      <div class="auth-derecha">
+        <h2 class="auth-titulo-derecha">Te damos la bienvenida nuevamente a La Izquierda Diario</h2>
+        <p class="auth-desc-derecha">Iniciá sesión con tu Email y contraseña</p>
+        <button class="btn-auth-derecha" id="irALogin">INICIAR SESIÓN</button>
+      </div>
+      <div class="auth-izquierda">
+        <h2 class="auth-titulo">Crear tu cuenta</h2>
+        <div class="auth-redes">
+          <button class="btn-red"><i class="fab fa-google"></i></button>
+          <button class="btn-red"><i class="fab fa-facebook-f"></i></button>
+          <button class="btn-red"><i class="fab fa-instagram"></i></button>
+          <button class="btn-red"><i class="fab fa-twitter"></i></button>
+        </div>
+        <p class="auth-o">Registráte con tu E-mail</p>
+        <div class="form-grupo">
+          <input type="text" id="regNombre" placeholder="Nombre y apellido"/>
+        </div>
+        <div class="form-grupo">
+          <input type="email" id="regEmail" placeholder="Ingresa E-mail"/>
+        </div>
+        <div class="form-grupo">
+          <input type="password" id="regPassword" placeholder="Crea tu contraseña"/>
+        </div>
+        <p class="auth-error" id="registroError"></p>
+        <button class="btn-auth" id="btnRegistro">REGISTRARME</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERFIL -->
+  <div class="auth-overlay" id="perfilOverlay">
+    <header class="header">
+      <div class="header-main">
+        <div class="header-left">
+          <button class="menu-btn-perfil">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+          <a href="#" id="logoVolverInicio">
+            <img src="img/laizquierdalogo.png" alt="La Izquierda Diario" class="logo-img"/>
+          </a>
+        </div>
+        <div class="header-right">
+          <button class="search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <circle cx="11" cy="11" r="7"/>
+              <line x1="16.5" y1="16.5" x2="22" y2="22"/>
+            </svg>
+          </button>
+          <button class="user-btn-perfil" id="perfilCerrar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="perfil-contenido">
+      <h1 class="perfil-nombre" id="perfilNombre">Nombre</h1>
+      <div class="perfil-tabs">
+        <button class="perfil-tab activo-tab" id="tabSeguidos">Seguidos</button>
+        <button class="perfil-tab" id="tabCorresponsales">Conocé más corresponsales</button>
+      </div>
+
+      <div class="perfil-panel" id="panelSeguidos">
+        <p class="perfil-contador"><strong id="contadorSeguidos">0</strong> corresponsales</p>
+      </div>
+
+      <div class="perfil-panel oculto" id="panelCorresponsales">
+        <h3 class="corresponsales-titulo">Descubrí otras coberturas</h3>
+        <div class="corresponsales-lista">
+
+          <div class="corresponsal-item cp-clickeable" data-id="MM">
+            <div class="corresponsal-avatar">
+              <div class="corresponsal-iniciales">MM</div>
+              <span class="corresponsal-badge">
+                <i class="fas fa-bullhorn" style="color:white; font-size:9px;"></i>
+              </span>
+            </div>
+            <div class="corresponsal-info">
+              <h4>María Martínez</h4>
+              <p>Soy empleada administrativa y participo en una biblioteca popular de mi ciudad. Me gusta acercar historias y experiencias que reflejan la realidad de mi comunidad.</p>
+            </div>
+          </div>
+
+          <div class="corresponsal-item cp-clickeable" data-id="LG">
+            <div class="corresponsal-avatar">
+              <div class="corresponsal-iniciales">LG</div>
+              <span class="corresponsal-badge">
+                <i class="fas fa-bullhorn" style="color:white; font-size:9px;"></i>
+              </span>
+            </div>
+            <div class="corresponsal-info">
+              <h4>Lorena González</h4>
+              <p>Trabajo en educación y me interesa documentar las experiencias de estudiantes y docentes. Creo que las voces de quienes viven cada situación enriquecen el debate público.</p>
+            </div>
+          </div>
+
+          <div class="corresponsal-item cp-clickeable" data-id="LL">
+            <div class="corresponsal-avatar">
+              <div class="corresponsal-iniciales">LL</div>
+              <span class="corresponsal-badge">
+                <i class="fas fa-bullhorn" style="color:white; font-size:9px;"></i>
+              </span>
+            </div>
+            <div class="corresponsal-info">
+              <h4>Lautaro Lopez</h4>
+              <p>Estudio Historia y participo en proyectos educativos y culturales. Me interesa contar lo que sucede en mi provincia desde una perspectiva cercana y comprometida.</p>
+            </div>
+          </div>
+
+          <div class="corresponsal-item cp-clickeable" data-id="LF">
+            <div class="corresponsal-avatar">
+              <div class="corresponsal-iniciales">LF</div>
+              <span class="corresponsal-badge">
+                <i class="fas fa-bullhorn" style="color:white; font-size:9px;"></i>
+              </span>
+            </div>
+            <div class="corresponsal-info">
+              <h4>Luz Fernandez</h4>
+              <p>Trabajo como enfermera en un hospital público en Mendoza y me interesa visibilizar las problemáticas que atraviesan los trabajadores de la salud.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="btn-cerrar-sesion" id="btnCerrarSesion">Cerrar sesión</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
